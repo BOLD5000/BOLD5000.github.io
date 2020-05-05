@@ -1,158 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>BOLD5000</title>
+  <title>BOLD5000</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css">
 
-    <!-- Custom styles for this template -->
-    <link href="css/landing-page.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand navbar-light fixed-top bg-light">
-      <div class="container">
-        <a class="navbar-brand">BOLD5000</a>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand navbar-light fixed-top bg-light">
+    <div class="container">
+      <a class="navbar-brand">BOLD5000</a>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="people.html">People</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dataset</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="overview.html">Overview</a>
-              <a class="dropdown-item" href="download.html">Download</a>
-              <a class="dropdown-item" href="terms.html">Terms of Use</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="overview.html">Dataset Overview</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.nature.com/articles/s41597-019-0052-3"><i class="fa fa-external-link" aria-hidden="true"></i> Paper</a>
+            <a class="nav-link" href="download.html">Download</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="visualizations.html">Visualizations<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.nature.com/articles/s41597-019-0052-3"><i class="fa fa-external-link"
+                aria-hidden="true"></i> Paper</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="visualizations.html">Visualizations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="terms.html">Terms of Use</a>
           </li>
         </ul>
       </div>
+    </div>
+  </nav>
+
+  <section class="testimonials text-center bg-light">
+    <div class=container>
+      <h1 class="mb-5">Visualizations</h1>
+      <div class="row">
+        <h2>t-SNE Visualizations</h2>
+        <p class="lead " style="text-align: justify">
+          We perform t-SNE on the BOLD signal from each of the unique 4,916 (2,900 for subject 4 (CSI4)) scenes trials.
+          The BOLD signal was extracted from each voxel for each ROI for each participant. We visualize our t-SNE
+          results with different categorical labels. Specifically, each t-SNE figure contains the same data
+          points/coordinates, and different labels are purely for visualization purposes.
+        </p>
+        <p class="lead" align='left'>For more details, please read the t-SNE section in our <a
+            href="https://arxiv.org/abs/1809.01281">paper</a>.</p>
+        <hr>
+        <p class="lead " style="text-align: justify">
+          First, we examine the similarity space across the different image datasets. Specifically, we will be
+          exploiting the implicit image attributes of these datasets: Scene contains whole scenes, ImageNet is focused
+          on a single object, and COCO is in between with images of multiple objects in an interactive scene. Given the
+          ROIs tend to process visual input with specific properties (e.g., category selectivity) we would expect to see
+          a separation in t-SNE space of the different image datasets, especially with regard to Scenes vs. ImageNet.
+        </p>
+
+        <hr>
+        <div class="row">
+          <div class="col-12 col-sm-10 col-md-8">
+            <figure class="text-center">
+              <figcaption class="figure-caption" style="font-size: 20px">t-SNE results are visualized for CSI1 and each
+                ROI. Here, the data points are labeled by the dataset the image belongs to (e.g. Scene, COCO, ImageNet).
+              </figcaption>
+              <img class="figure-img img-fluid" src="img/compressed/dataset_subj1_tr34_all.jpg">
+            </figure>
+          </div>
+        </div>
+
+        <hr>
+        <div class="row">
+          <div class="col-12 col-sm-10 col-md-8">
+            <figure class="figure">
+              <figcaption class="figure-caption" style="font-size: 20px">t-SNE results are visualized for the PPA for
+                <em>ALL</em> subjects. Here, the data points are labeled by the dataset the image belongs to (e.g.
+                Scene, COCO, ImageNet).</figcaption>
+              <img class="figure-img img-fluid" src="img/compressed/dataset_subjAll_tr34_tr3-CSI4_all.jpg">
+            </figure>
+          </div>
+        </div>
+
+        <p class="lead " style="text-align: justify">
+          Secondly, the t-SNE results are visualized with only ImageNet images, and our labels and categories are broken
+          down further. Specifically, the images are labeled with ImageNet super categories.
+        </p>
+
+        <hr>
+        <div class="row">
+          <div class="col-12 col-sm-10 col-md-8">
+            <figure class="figure">
+              <figcaption class="figure-caption" style="font-size: 20px">t-SNE results for responses to only ImageNet
+                images are visualized for the PPA for <em>ALL</em> subjects. Here, the data points are labeled by the
+                ImageNet super categories.</figcaption>
+              <img class="figure-img img-fluid" src="img/compressed/cat_subjAll_tr34_tr3-CSI4_imagenet.jpg">
+            </figure>
+          </div>
+        </div>
       </div>
-    </nav>
 
+      <div class="row" style="padding-top: 20px">
+        <h2 style="text-align:left">Additional t-SNE Visualizations</h2>
+      </div>
 
-    <section class="testimonials text-center bg-light">
-      <div class=container>
-        <h1 class="mb-5">Visualizations</h1>
-        <div class="row">
-          <h2>t-SNE Visualizations</h2>
-          <p class="lead " style="text-align: justify" >
-          We perform t-SNE on the BOLD signal from each of the unique 4,916 (2,900 for subject 4 (CSI4)) scenes trials. The BOLD signal was extracted from each voxel for each ROI for each participant. We visualize our t-SNE results with different categorical labels. Specifically, each t-SNE figure contains the same data points/coordinates, and different labels are purely for visualization purposes.
-          </p>
-          <p class = "lead" align='left'>For more details, please read the t-SNE section in our <a href="https://arxiv.org/abs/1809.01281">paper</a>.</p>
-          <hr>
-          <p class="lead " style="text-align: justify" >
-            First, we examine the similarity space across the different image datasets. Specifically, we will be exploiting the implicit image attributes of these datasets: Scene contains whole scenes, ImageNet is focused on a single object, and COCO is in between with images of multiple objects in an interactive scene. Given the ROIs tend to process visual input with specific properties (e.g., category selectivity) we would expect to see a separation in t-SNE space of the different image datasets, especially with regard to Scenes vs. ImageNet.
-          </p>
-
-          <hr>
-            <div class="row">
-              <div class="col-12 col-sm-10 col-md-8">
-                <figure class="text-center">
-                 <figcaption class="figure-caption" style="font-size: 20px">t-SNE results are visualized for CSI1 and each ROI. Here, the data points are labeled by the dataset the image belongs to (e.g. Scene, COCO, ImageNet).</figcaption>
-                <img class = "figure-img img-fluid" src="img/compressed/dataset_subj1_tr34_all.jpg">
-               </figure>
-              </div>
-            </div>
-
-            <hr>
-            <div class="row">
-              <div class="col-12 col-sm-10 col-md-8">
-                <figure class="figure">
-                 <figcaption class="figure-caption" style="font-size: 20px">t-SNE results are visualized for the PPA for <em>ALL</em> subjects. Here, the data points are labeled by the dataset the image belongs to (e.g. Scene, COCO, ImageNet).</figcaption>
-                <img class = "figure-img img-fluid" src="img/compressed/dataset_subjAll_tr34_tr3-CSI4_all.jpg">
-               </figure>
-              </div>
-            </div>
-
-            <p class="lead " style="text-align: justify" >
-            Secondly, the t-SNE results are visualized with only ImageNet images, and our labels and categories are broken down further. Specifically, the images are labeled with ImageNet super categories.
-            </p>
-
-            <hr>
-            <div class="row">
-              <div class="col-12 col-sm-10 col-md-8">
-                <figure class="figure">
-                 <figcaption class="figure-caption" style="font-size: 20px">t-SNE results for responses to only ImageNet images are visualized for the PPA for <em>ALL</em> subjects. Here, the data points are labeled by the ImageNet super categories.</figcaption>
-                <img class = "figure-img img-fluid" src="img/compressed/cat_subjAll_tr34_tr3-CSI4_imagenet.jpg">
-               </figure>
-              </div>
-            </div>
-        </div>
-
-        <div class="row" style="padding-top: 20px">
-          <h2 style="text-align:left">Additional t-SNE Visualizations</h2>
-        </div>
-
-        <div class="row">
-          <p class="lead mb-0" style="text-align: left">
-          If you'd like to view all detailed t-SNE visualizations for all subjects and all ROIs, you can download it <a href="https://www.dropbox.com/s/vz1shxiiuu0yyow/tsne_supplementary.zip?dl=1">here</a>.
+      <div class="row">
+        <p class="lead mb-0" style="text-align: left">
+          If you'd like to view all detailed t-SNE visualizations for all subjects and all ROIs, you can download it <a
+            href="https://www.dropbox.com/s/vz1shxiiuu0yyow/tsne_supplementary.zip?dl=1">here</a>.
           <br>
           Our t-SNE visualizations include
-          </p>
-        </div>
-        <div class="row">
-          <ol class="lead mb-0 list-unordered" style="text-align: left" >
-            <li>various combinations of image dataset labels</li>
-            <li>various combinations of ImageNet super categories with additions of COCO or Scenes images</li>
-          </ol>
-        </div>
-
-
+        </p>
+      </div>
+      <div class="row">
+        <ol class="lead mb-0 list-unordered" style="text-align: left">
+          <li>various combinations of image dataset labels</li>
+          <li>various combinations of ImageNet super categories with additions of COCO or Scenes images</li>
+        </ol>
       </div>
 
-    </section>
+
+    </div>
+
+  </section>
 
 
 
-    <!-- Footer -->
-    <footer class="footer bg-light">
-      <div class="container">
-        <div class="row" >
-          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a href="people.html">Contact</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/nchang430/BOLD5000-Scripts">GitHub</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a href="terms.html">Terms of Use</a>
-              </li>
+  <!-- Footer -->
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a href="people.html">Contact</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/nchang430/BOLD5000-Scripts">GitHub</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a href="terms.html">Terms of Use</a>
+            </li>
 
-              <!-- <li class="list-inline-item mr-3">
+            <!-- <li class="list-inline-item mr-3">
                 <a href="#">
                   <i class="fa fa-facebook fa-2x fa-fw"></i>
                 </a>
@@ -167,16 +185,16 @@
                   <i class="fa fa-instagram fa-2x fa-fw"></i>
                 </a>
               </li> -->
-            </ul>
-          </div>
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  </body>
+</body>
 
 </html>
