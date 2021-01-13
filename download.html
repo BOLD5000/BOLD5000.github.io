@@ -33,8 +33,8 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="people.html">People</a>
@@ -42,12 +42,15 @@
           <li class="nav-item">
             <a class="nav-link" href="overview.html">Dataset Overview</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="download.html">Download</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://www.nature.com/articles/s41597-019-0052-3"><i class="fa fa-external-link"
                 aria-hidden="true"></i> Paper</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="listserv.html">List Serv</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="visualizations.html">Visualizations</a>
@@ -65,72 +68,61 @@
       <h1 class="mb-5 text-center">Dataset Download</h1>
       <div class="row">
         <div class="col-md-12">
-          <h2>Kilthub</h2>
-          <p class="lead mb-0"> Raw fMRI data is available on Kilthub, Figshare. Please navigate to our <a
-              href="https://figshare.com/articles/BOLD5000/6459449">dataset page</a> to download our dataset. <br>
-            Available data include: subject information, image labels, raw fMRI BOLD in dicom format, physiological
-            data, and behavioral data.
-          </p>
-          <br>
-          <p class="lead mb-0">
-            <span class="badge badge-secondary">New</span> Processed brain responses (as vectors) to images are now
-            available!
+          <h2>Kilthub/Figshare</h2>
+          <p class="lead mb-0"> Please navigate to our Kilthub/Figshare <a
+              href="https://figshare.com/articles/BOLD5000/6459449">dataset
+              page</a> to download our dataset. <br>
+            Available data on Kilthub:
+          <ul class="lead mb-0" style="text-align: left">
+            <li><span class="badge badge-secondary">New</span> Processed brain responses (as vectors) to images</li>
+            <li>Raw MRI Data (DICOM; all data except defaced anatomicals, which are provided in NIfTI)</li>
+            <li>Pre-scan Normalization Filtered fMRI Data (DICOM)</li>
+            <li>Physiological Data</li>
+            <li>All Behavioral Data</li>
+            <li>Data extracted from ROIs</li>
+            <li>Scanning Protocols (PDF)</li>
+            <li>5,254 Image Names</li>
+            <li>Image labels</li>
+            <li>Experiment Presentation Code (Matlab)</li>
+          </ul>
           </p>
         </div>
         <div class="col-md-12" style="padding-top: 20px">
-          <h2>OpenNeuro <span class="badge badge-secondary">New</span></h2>
-          <p class="lead mb-0"> Raw (BIDS format), pre-processed fMRI data (BIDS format), ROI masks, scene related
-            activity extracted from regions of interest, and MRIQC reports are now available on OpenNeuro. Please
+          <h2>OpenNeuro</h2>
+          <p class="lead mb-0"> Please
             navigate to our <a href="https://openneuro.org/datasets/ds001499/versions/1.3.0">dataset page</a> to
             download our dataset.
+            <br>Available data on OpenNeuro:
+          <ul class="lead mb-0" style="text-align: left">
+            <li>Pre-scan Normalization Filtered MRI Data (BIDS)</li>
+            <li>MRIQC reports</li>
+            <li>fMRIPREP preprocessed data & reports</li>
+            <li>ROI Masks</li>
+            <li>5,254 Image Names</li>
+          </ul>
           </p>
         </div>
         <div class="col-md-12" style="padding-top: 20px">
-          <h2>Images/Stimuli <span class="badge badge-secondary">New</span></h2>
+          <h2>Images/Stimuli</h2>
           <p class="lead mb-0"> If you would like to download only our images used as stimuli in the study along with
             provided labels, please download <a
               href="https://www.dropbox.com/s/5ie18t4rjjvsl47/BOLD5000_Stimuli.zip?dl=1">here</a>.
           </p>
         </div>
-        <div class="col-md-12" style="padding-top: 20px">
-          <h2>Additional Detail on Download Locations<span class="badge badge-secondary">New</span></h2>
-          <p class="lead mb-0"> 
-              <ul class="lead mb-0" style="text-align: left">
-                <li>BOLD5000.org</li>
-                  <ul class="lead mb-0" style="text-align: left">
-                    <li>All relevant links for publicly available data (Figshare, OpenNeuro)</li>
-                    <li>5,254 Images and Names</li>
-                    <li>Image labels</li>
-                    <li>News & updates</li>
-                    <li>t-SNE supplemental results</li>
-                  </ul>
-                <li><a href="https://figshare.com/articles/BOLD5000/6459449">Kilthub, Figshare</a></li>
-                  <ul class="lead mb-0" style="text-align: left">
-                    <li>Raw MRI Data (DICOM; all data except defaced anatomicals, which are provided in NIfTI)</li>
-                    <li>Pre-scan Normalization Filtered fMRI Data (DICOM)</li>
-                    <li>Physiological Data</li>
-                    <li>All Behavioral Data</li>
-                    <li>Data extracted from ROIs</li>
-                    <li>Scanning Protocols (PDF)</li>
-                    <li>5,254 Image Names</li>
-                    <li>Image labels</li>
-                    <li>Experiment Presentation Code (Matlab)</li>
-                  </ul>
-                <li><a href="https://openneuro.org/datasets/ds001499/versions/1.3.0">OpenNeuro.org</a></li>
-                  <ul class="lead mb-0" style="text-align: left">
-                    <li>Pre-scan Normalization Filtered MRI Data (BIDS)</li>
-                    <li>MRIQC reports</li>
-                    <li>fMRIPREP preprocessed data & reports</li>
-                    <li>ROI Masks</li>
-                    <li>5,254 Image Names</li>
-                  </ul>
-              </ul> 
+        <div class="col-md-12" style="padding-top: 30px">
+          <h2>Additional Large-scale Datasets</h2>
+          <p class="lead mb-0"> If you would like to compare results with other large-scale datasets, we provided a list
+            of such datasets here:
+          <ul class="lead mb-0" style="text-align: left">
+            <!-- <li></li> -->
+            <li>Coming soon NSD</li>
+          </ul>
           </p>
         </div>
+
+
+
       </div>
-
-
-    </div>
 
   </section>
 
